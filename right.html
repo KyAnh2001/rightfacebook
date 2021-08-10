@@ -30,7 +30,7 @@
                     </div>
                     <div class="del">
                         Xóa
-                    </div>
+                    </div>                  
                 </div>
             </div>
         </div>
@@ -39,7 +39,91 @@
             <div class="h1">Người liên hệ</div>
             <div class="video-call"><i class="fas fa-video"></i></div>
             <div class="search-right"><i class="fas fa-search"></i></div>
-            <div class="menu-right"><i class="fas fa-ellipsis-h"></i></div>
+            <div class="dropdown">
+                <button class="dropbtn" id="myBtn"><i class="fas fa-ellipsis-h"></i></button>
+                <div class="dropdown-content" id="myDropdown">
+                    <div class="set-chat">
+                        <p class="text-set-chat">Cài đặt chat</p>
+                        <p class="text-set-chat-1">Tùy chỉnh trải nghiệm trên Messenger.</p>
+
+                    </div>
+                    <hr style="color: #3E4042;" width="250px" size="4" color="#3E4042">
+                    <div class="phone-sound">
+                        <div class="icon-volumn"><i class="fas fa-phone"></i></div>
+                        <div class="text-phone-sound">Âm thanh cuộc gọi</div>
+                        <div class="icon-checkbox">
+                            <div class="flatRoundedCheckbox">
+
+                                <input type="checkbox" name="" id="flatOneRoundedCheckbox" value="1" checked>
+                              
+                                <label for="flatOneRoundedCheckbox"></label>
+                              
+                                <div></div>
+                              
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="phone-sound">
+                        <div class="icon-volumn"><i class="fas fa-volume-down"></i></div>
+                        <div class="text-phone-sound">Âm thanh tin nhắn</div>
+                        <div class="icon-checkbox">
+                            <div class="flatRoundedCheckbox1">
+
+                                <input type="checkbox" name="" id="flatOneRoundedCheckbox1" value="2">
+                              
+                                <label for="flatOneRoundedCheckbox1"></label>
+                              
+                                <div></div>
+                              
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="phone-sound">
+                        <div class="icon-volumn"><i class="fas fa-volume-down"></i></div>
+                        <div class="text-phone-sound">Tin nhắn mới bật lên</div>
+                        <div class="icon-checkbox">
+                            <div class="flatRoundedCheckbox2">
+
+                                <input type="checkbox" name="" id="flatOneRoundedCheckbox2" value="3" checked>
+                              
+                                <label for="flatOneRoundedCheckbox2"></label>
+                              
+                                <div></div>
+                              
+                            </div>
+                        </div>
+                    </div>  
+                    <hr style="color: #3E4042;" width="250px" size="4" color="#3E4042">                  
+                    <div class="phone-sound">
+                        <div class="icon-volumn"><i class="fas fa-phone-square"></i></i></div>
+                        <div class="text-phone-sound">Hiển thị danh bạ</div>
+                        <div class="icon-checkbox">
+                            <div class="flatRoundedCheckbox3">
+
+                                <input type="checkbox" name="" id="flatOneRoundedCheckbox3" value="3" checked>
+                              
+                                <label for="flatOneRoundedCheckbox3"></label>
+                              
+                                <div></div>
+                              
+                            </div>
+                        </div>
+                    </div> 
+                    <hr style="color: #3E4042;" width="250px" size="4" color="#3E4042">                  
+                    <div class="end-menu">
+                        <div class="icon-end-1"><i class="far fa-circle"></i></div>
+                        <div class="text-end-1">Tắt trạng thái hoạt động</div>
+                    </div> 
+                    <div class="end-menu">
+                        <div class="icon-end-1"><i class="fas fa-envelope"></i></div>
+                        <div class="text-end-1">Cài đặt gửi tin nhắn</div>
+                    </div> 
+                    <div class="end-menu">
+                        <div class="icon-end-1"><i class="fas fa-ban"></i></div>
+                        <div class="text-end-1">Cài đặt chặn</div>
+                    </div> 
+                </div>
+              </div>
         </div>
         <div class="people-contact">
             <div class="people-1">
@@ -144,6 +228,7 @@
                     <li class="li-people-contact-2">
                         <div class="name-people-contact-2">Code the future f3.2</div>
                     </li>
+                    
                 </ul>
             </div>
         </div>
@@ -159,7 +244,25 @@
         </div>
         <div class="new-mess"><i class="fas fa-envelope-open-text"></i></div>
     </div>
+    <div class="flatRoundedCheckbox">
 
+        <input type="checkbox" name="" id="flatOneRoundedCheckbox" value="1">
+      
+        <label for="flatOneRoundedCheckbox"></label>
+      
+        <div></div>
+      
+    </div>
+
+    <script>
+        // Get the button, and when the user clicks on it, execute myFunction
+        document.getElementById("myBtn").onclick = function() {myFunction()};
+        
+        /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        </script>
     <script src="https://kit.fontawesome.com/0b458ddf86.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
